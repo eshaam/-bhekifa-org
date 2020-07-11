@@ -1,0 +1,68 @@
+---
+layout: default
+title: Home
+---
+
+<div class="container-narrow">
+
+  <div class="jumbotron">
+    <h2>Cloud AI is ready and can help Video Gamers all over the world </h2>
+    <hr>
+    <h1><span id="change" class="text-info"></span></h1>
+    <hr>
+    <p class="lead">
+      Video gaming enables anyone from anywhere to learn and play with others.
+      Whether they are working as waiters or professional athletes -- they equally have the opportunity to become someone, somebody or somebodies can look to for help.
+      Video Gamers are now more then ever willing to show themselves to world which has fast tracked Video Game sharing and streaming.
+    </p>
+    <a class="btn btn-large btn-success" href="#">Sign up today</a>
+  </div>
+
+  <div class="row-fluid">
+    <div class="span12">
+      <h2> F.A.Q</h2>
+      <hr>
+      <h3>Who are we</h3>
+      <p>We are a network of startup veterans spanning relationships that go back almost 8 years and that have personally played a part in seeing interns today become Heads of Departments in other startups as well as management becoming part of leadership teams </p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span12">
+      <hr>
+      <h3>Why Non profit</h3>
+      <p>We believe that in pursuit of our mission, we will come accross additional problems such as training, which will enable us to contribute a solution in-line with our mission</p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span12">
+      <hr>
+      <h3>Funding</h3>
+      <p>Still work-in-progess. But We believe we have the experience to build and scale products and services that will ideally fund operations</p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+var text = [
+'Play games all day',
+'Fund Projects',
+'Fund Studies',
+'Support there families',
+'Pursue there dreams'
+];
+var counter = 0;
+var elem = document.getElementById("change");
+var inst = setInterval(change, 1000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
+}
+
+change();
+</script>
