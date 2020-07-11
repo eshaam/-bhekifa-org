@@ -32,6 +32,11 @@
   }
 
   if(readCookie('cookie-notice-dismissed')=='true') {
+    var s = document.createElement("script");
+s.type = "text/javascript";
+s.src = "https://www.googletagmanager.com/gtag/js?id=UA-172424672-1";
+document.head.appendChild(s);
+
       {% include ga.html %}
   } else {
       document.getElementById('cookie-notice').style.display = 'block';
